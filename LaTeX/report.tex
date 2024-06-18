@@ -43,15 +43,15 @@ Wyniki klasyfikatorów na danych oryginalnych:
 
 \begin{itemize}
     \item \textbf{Regresja Logistyczna}:
-    \begin{itemize}
-        \item Dokładność: 0.8086
-        \item AUC: 0.7149
-    \end{itemize}
+          \begin{itemize}
+              \item Dokładność: 0.8086
+              \item AUC: 0.7149
+          \end{itemize}
     \item \textbf{XGBoost}:
-    \begin{itemize}
-        \item Dokładność: 0.8098
-        \item AUC: 0.7578
-    \end{itemize}
+          \begin{itemize}
+              \item Dokładność: 0.8098
+              \item AUC: 0.7578
+          \end{itemize}
 \end{itemize}
 
 Wyniki pokazują, że XGBoost ma nieco wyższą dokładność i znacznie wyższe AUC w porównaniu do regresji logistycznej na danych oryginalnych.
@@ -62,44 +62,44 @@ Wyniki klasyfikatorów na różnych metodach próbkowania:
 
 \begin{itemize}
     \item \textbf{Dane oversamplowane}:
-    \begin{itemize}
-        \item Regresja Logistyczna:
-        \begin{itemize}
-            \item Dokładność: 0.6836
-            \item AUC: 0.7155
-        \end{itemize}
-        \item XGBoost:
-        \begin{itemize}
-            \item Dokładność: 0.7606
-            \item AUC: 0.7570
-        \end{itemize}
-    \end{itemize}
+          \begin{itemize}
+              \item Regresja Logistyczna:
+                    \begin{itemize}
+                        \item Dokładność: 0.6836
+                        \item AUC: 0.7155
+                    \end{itemize}
+              \item XGBoost:
+                    \begin{itemize}
+                        \item Dokładność: 0.7606
+                        \item AUC: 0.7570
+                    \end{itemize}
+          \end{itemize}
     \item \textbf{Dane undersamplowane}:
-    \begin{itemize}
-        \item Regresja Logistyczna:
-        \begin{itemize}
-            \item Dokładność: 0.6807
-            \item AUC: 0.7166
-        \end{itemize}
-        \item XGBoost:
-        \begin{itemize}
-            \item Dokładność: 0.7053
-            \item AUC: 0.7522
-        \end{itemize}
-    \end{itemize}
+          \begin{itemize}
+              \item Regresja Logistyczna:
+                    \begin{itemize}
+                        \item Dokładność: 0.6807
+                        \item AUC: 0.7166
+                    \end{itemize}
+              \item XGBoost:
+                    \begin{itemize}
+                        \item Dokładność: 0.7053
+                        \item AUC: 0.7522
+                    \end{itemize}
+          \end{itemize}
     \item \textbf{Dane z SMOTE}:
-    \begin{itemize}
-        \item Regresja Logistyczna:
-        \begin{itemize}
-            \item Dokładność: 0.6713
-            \item AUC: 0.7176
-        \end{itemize}
-        \item XGBoost:
-        \begin{itemize}
-            \item Dokładność: 0.8058
-            \item AUC: 0.7557
-        \end{itemize}
-    \end{itemize}
+          \begin{itemize}
+              \item Regresja Logistyczna:
+                    \begin{itemize}
+                        \item Dokładność: 0.6713
+                        \item AUC: 0.7176
+                    \end{itemize}
+              \item XGBoost:
+                    \begin{itemize}
+                        \item Dokładność: 0.8058
+                        \item AUC: 0.7557
+                    \end{itemize}
+          \end{itemize}
 \end{itemize}
 
 Wyniki wskazują, że XGBoost konsekwentnie osiąga lepsze wyniki zarówno pod względem dokładności, jak i AUC we wszystkich metodach próbkowania w porównaniu do regresji logistycznej. Oversampling i SMOTE przynoszą większe korzyści dla modelu XGBoost niż undersampling.
@@ -110,11 +110,11 @@ Wyniki wskazują, że XGBoost konsekwentnie osiąga lepsze wyniki zarówno pod w
 \begin{itemize}
     \item \textbf{Wydajność na danych oryginalnych}: XGBoost przewyższa regresję logistyczną pod względem AUC, co wskazuje na lepszą separację klas.
     \item \textbf{Wpływ metod próbkowania}:
-    \begin{itemize}
-        \item \textbf{Oversampling}: Poprawia AUC dla XGBoost, ale nie tak bardzo dla regresji logistycznej.
-        \item \textbf{Undersampling}: Powoduje niższą dokładność dla obu modeli, ale AUC pozostaje stosunkowo stabilne.
-        \item \textbf{SMOTE}: Zapewnia zrównoważoną poprawę AUC dla obu modeli, przy czym XGBoost znacząco zyskuje na dokładności.
-    \end{itemize}
+          \begin{itemize}
+              \item \textbf{Oversampling}: Poprawia AUC dla XGBoost, ale nie tak bardzo dla regresji logistycznej.
+              \item \textbf{Undersampling}: Powoduje niższą dokładność dla obu modeli, ale AUC pozostaje stosunkowo stabilne.
+              \item \textbf{SMOTE}: Zapewnia zrównoważoną poprawę AUC dla obu modeli, przy czym XGBoost znacząco zyskuje na dokładności.
+          \end{itemize}
 \end{itemize}
 
 \subsubsection{Wnioski}
@@ -130,31 +130,31 @@ Wyniki wskazują, że XGBoost konsekwentnie osiąga lepsze wyniki zarówno pod w
 
 \begin{itemize}
     \item \textbf{Wybrane cechy przy użyciu RFE}:
-    \begin{itemize}
-        \item Regresja Logistyczna:
-        \begin{itemize}
-            \item Dokładność: 0.8087
-            \item AUC: 0.6975
-        \end{itemize}
-        \item XGBoost:
-        \begin{itemize}
-            \item Dokładność: 0.8140
-            \item AUC: 0.7389
-        \end{itemize}
-    \end{itemize}
+          \begin{itemize}
+              \item Regresja Logistyczna:
+                    \begin{itemize}
+                        \item Dokładność: 0.8087
+                        \item AUC: 0.6975
+                    \end{itemize}
+              \item XGBoost:
+                    \begin{itemize}
+                        \item Dokładność: 0.8140
+                        \item AUC: 0.7389
+                    \end{itemize}
+          \end{itemize}
     \item \textbf{Wybrane cechy przy użyciu SFS}:
-    \begin{itemize}
-        \item Regresja Logistyczna:
-        \begin{itemize}
-            \item Dokładność: 0.8118
-            \item AUC: 0.7062
-        \end{itemize}
-        \item XGBoost:
-        \begin{itemize}
-            \item Dokładność: 0.8128
-            \item AUC: 0.7429
-        \end{itemize}
-    \end{itemize}
+          \begin{itemize}
+              \item Regresja Logistyczna:
+                    \begin{itemize}
+                        \item Dokładność: 0.8118
+                        \item AUC: 0.7062
+                    \end{itemize}
+              \item XGBoost:
+                    \begin{itemize}
+                        \item Dokładność: 0.8128
+                        \item AUC: 0.7429
+                    \end{itemize}
+          \end{itemize}
 \end{itemize}
 
 \subsection{Wybór cech przy użyciu SFS i RFE}
@@ -236,8 +236,7 @@ def plot_xgb_feature_importance(model, feature_names):
 \subsubsection{Wnioski}
 \begin{itemize}
     \item \textbf{Efektywność selekcji cech}: Selekcja cech, szczególnie przy użyciu SFS, poprawia wydajność klasyfikacji dla XGBoost. W przypadku regresji logistycznej wpływ jest mniej wyraźny, ale nadal korzystny pod względem dokładności.
-    \item \textbf{Rekomendacja}: Stosowanie metod selekcji cech, takich jak RFE i SFS, może znacząco poprawić wydajność modelu, zwłaszcza w przypadku bardziej złożonych modeli jak XGBoost.
+    \item \textbf{Rekomendacja}: Stosowanie metod selekcji cech, takich jak RFE i SFS, może znacząco poprawić wydajność modelu, zwłaszcza w przypadku bardziej złożonych modeli jak XGBoost. W szczególności funkcje oceny ważności cech pomagają zidentyfikować kluczowe atrybuty, które wpływają na skuteczność klasyfikacji.
 \end{itemize}
-
 
 \end{document}
